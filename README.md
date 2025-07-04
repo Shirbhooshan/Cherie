@@ -16,7 +16,7 @@ This is a simple static website built as part of a college project. It was devel
 - JavaScript (Vanilla)
 - Git & GitHub
 
-> While this was a team submission, I was responsible for designing and coding the entire website.
+> While this was a team submission, I was responsible for designing and coding most of the website.
 
 ## 📄 License
 
