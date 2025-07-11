@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Newsletter
+        </title>
+        
+        <!--meta tags-->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Watch, Website">
+        <meta name="description" content = "Newsletter">
+        <meta name="author" content="Chérie">
+        <meta http-equiv="refresh" content="1500">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--external css-->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- This is for internal styling-->
+        <style>
+        body{
+            margin:0;
+            animation: fadeIn 0.2s ease-in-out; /* for cooler startup */
+        }
+
+        @keyframes fadeIn {
+        from {
+        opacity: 0; /* start fully transparent */
+        }
+        to {
+        opacity: 1; /* end fully visible */
+        }
+}
+            .newsletter-container{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                height:750px;
+                background-color:rgb(235, 234, 234);
+            }
+
+            .newsletter-content{
+                background-color: white;
+                max-width:500px;
+                width:100%;
+                border-radius:8px;
+                box-shadow:grey;
+                padding:30px;
+            }
+
+            h1{
+                text-align:center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color:black;
+                margin-bottom:20px;
+            }
+
+            .form-content{
+                margin-bottom:15px;
+            }
+
+            label{
+                display:block; /*adds them up and down */
+                font-weight:bold;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color:black;
+                margin-bottom:10px;
+                font-size:18px;
+            }
+
+            input{
+                border:1px groove black;
+                border-radius:8px;
+                font-size:14px;
+                width:95%;
+                margin-top:5px;
+                padding: 10px;
+            }
+
+            textarea{
+                border:1px groove black;
+                border-radius:8px;
+                font-size:14px;
+                width:95%;
+                margin-top:5px;
+                padding: 10px;
+                resize: vertical; /* makes it so that it doesn't resize to the side */
+            }
+
+            select{
+                border:1px groove black;
+                border-radius:8px;
+                font-size:14px;
+                width:100%;
+                margin-top:5px;
+                padding: 10px;
+            }
+
+            button{
+                background-color: green;
+                color:rgb(255, 255, 255);
+                border:none;
+                border-radius:10px;
+                cursor:pointer;
+                font-size:20px;
+                width:100%;
+                padding:15px;
+            }
+
+            button:hover{
+                background-color:rgb(17, 95, 17);
+                transition:0.4s;
+            }
+            
+            .icon-bar button{
+                color:black;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <div class="icon-bar">
+                    
+            <div class="icon-holder">
+                <a href="Products/products.html">
+                <img src ="../images/Logo.png" width="150px;" height="60px;" alt = "logo" style="object-fit: cover;">
+                </a>
+            </div>
+
+            <input type="text" class = "search-bar" placeholder="Search..." onclick="showalert()">
+            <a href="#"><button class="authorization-buttons" onclick="showalert()">Log in</button></a>
+            <a href="#"><button class="authorization-buttons" onclick="showalert()">Register</button></a>
+            <script>
+                function showalert() {
+                    alert("This feature is not available right now.");
+                }
+                </script>
+    </div>
+
+    <!--Form section-->
+<div class="newsletter-container">
+    <div class="newsletter-content">
+    <h1>Newsletter Signup</h1>
+
+    <form id = "newsletterForm" method="post">
+
+        <!--for first name-->
+
+        <div class="form-content">
+            <label for = "first-name">First name:</label>
+            <input type ="text" id ="first-name" name ="first-name" placeholder="Enter your first name" required>
+        </div>
+
+        <!--for last name-->
+
+        <div class="form-content">
+            <label for = "last-name">Last name:</label>
+            <input type ="text" id ="last-name" name ="last-name" placeholder="Enter your last name" required>
+        </div>
+
+        <!-- for age-->
+
+        <div class="form-content">
+            <label for = "age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+        </div>
+
+        <!--gender-->
+
+        <div class="form-content">
+            <label for = "gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <!--remarks-->
+        <div class="form-content">
+            <label for ="remarks">Remarks:</label>
+            <textarea id = "remarks" name = "remarks" placeholder = "Enter remarks" rows="2"></textarea>
+        </div>
+
+        <!--button-->
+        
+        <div class="form-content">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+
+    <!-- javascript for it-->  
+
+    <script>
+
+        document.getElementById('newsletterForm').addEventListener('submit',function(event)
+        {
+        event.preventDefault();
+
+        const firstname = document.getElementById('first-name').value;
+        const lastname = document.getElementById('last-name').value;
+        const gender = document.getElementById('gender').value;
+        const age = document.getElementById('age').value;
+        const remarks = document.getElementById('remarks').value;
+
+        if (firstname=== '' || lastname === '' || age === '' || gender === '' || remarks === '')
+        {
+        alert('Not complete: Please fill up all fields');
+        }
+        else{
+        alert('Complete! All fields are filled.');
+        }
+    });
+    </script>
+
+    <!--footer section-->
+
+       <!--Footer segment-->
+
+       <footer>
+        <div class ="footer-color" style="background-color:rgb(17, 19, 41);">
+            <div class="footer-container">
+
+                <div class="left-side-footer">
+                    <div class="left-side-footer-1">
+                        <img src ="../images/Logo3 (1).png" width="200" height="200" alt="icon" style="object-fit: cover;">
+
+                        <ul>
+
+                        <li>
+                        <a href = "../watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Home
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Products/products.html" style="text-decoration: none;" class="footer-navlinks">
+                            Products
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Blog/watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Blog
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Research/research_home.html" style="text-decoration: none;" class="footer-navlinks">
+                            Research
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../About us/index.html" style="text-decoration: none;" class="footer-navlinks">
+                            About us
+                        </a>
+                        </li>
+
+                        </ul>
+                    </div> 
+
+                    <hr style="width:570px;">
+
+                    <div class="left-side-footer-2">
+                        <a href="https://www.facebook.com">
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com">
+                            Instagram
+                        </a>
+                        <a href="https://www.X.com">
+                            X
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            Linkedin
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            Youtube
+                        </a>
+                    </div>
+
+                    <div class="left-side-footer-end">
+                        © 2024-2025 <a href="../watch.html" style="color:white;">Chérie.com</a>
+                    </div>
+                </div>
+
+                <div class="right-side-footer">
+                    <div class="subscribe-container">
+                        <div class="subscribe-text">
+                            <h3>Subscribe to Chérie News</h3>
+                            <br>
+                            <p>Sign up for the latest news about Chérie, delivered to you weekly.</p>
+                            <br>
+                            
+                            <div class="subscribe-input">
+                            <form id = "emailForm">
+                                    <input type="email" id="email" name="email" placeholder="Enter Email Address">
+
+                            <!--For validating the form-->
+                            <script src="../javascript/emailValidate.js"></script>
+
+                            <br>
+                            <button type="submit" class="subscribe-button">Subscribe</button>
+                            </form>
+                            
+                            <br>
+                            </div>
+
+                            <br>
+                            <p class="end">Protected by <span class="highlight">reCAPTCHA.</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
