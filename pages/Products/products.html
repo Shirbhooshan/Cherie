@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Products
+        </title>
+        
+        <!--meta tags-->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Watch, Website">
+        <meta name="description" content = "Watch Market">
+        <meta name="author" content="Chérie">
+        <meta http-equiv="refresh" content="1500">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--external css-->
+        <link rel="stylesheet" href="../../css/style.css">
+
+        <!-- This is for internal styling-->
+        <style>
+        body{
+        margin:0;
+        animation: fadeIn 0.2s ease-in-out; /* for cooler startup */
+        }
+
+        @keyframes fadeIn {
+        from {
+        opacity: 0; /* start fully transparent */
+        }
+        to {
+        opacity: 1; /* end fully visible */
+        }
+}
+        </style>
+    </head>
+
+    <body>
+            <section class="new-year">
+                <header>Discounts on every watch, Enjoy the New Years Season!!</header>
+            </section>
+
+            <div class="icon-bar">
+                    
+                    <div class="icon-holder">
+                        <a href="#">
+                        <img src ="../../images/Logo.png" width="150px;" height="60px;" alt = "logo" style="object-fit: cover;">
+                        </a>
+                    </div>
+
+                    <input type="text" class = "search-bar" placeholder="Search..." onclick="showalert()">
+                    <a href="#"><button class="authorization-buttons" onclick="showalert()">Log in</button></a>
+                    <a href="#"><button class="authorization-buttons" onclick="showalert()">Register</button></a>
+                    <script>
+                        function showalert() {
+                            alert("This feature is not available right now.");
+                        }
+                        </script>
+            </div>
+
+            <!--nav bar-->
+            <nav>
+                <div class="nav-container">
+                    <ul>
+                        <div class="nav-links">
+                            <li><a href="../../watch.html" style="text-decoration:none;">Home</a></li>
+                            <li><a href="products.html" style="text-decoration:none;">Products</a></li>
+                            <li><a href="../Blog/watch.html" style="text-decoration:none;">Blog</a></li>
+                            <li><a href="../Research/research_home.html" style="text-decoration:none;">Research</a></li>
+                            <li><a href="../About us/index.html" style="text-decoration:none;">About us</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="bgimage-1">
+                <img src = "../../images/products/background7.jpg" style="width:100%">
+            </div>
+
+            <!-- Section for the Products -->
+
+            <br>
+
+            <p class="watchtype"> Watches</p>
+            <section class = "buttons">
+                <a href ="men.html" style="text-decoration:none;"><button class = "button1" type="button">Men</button></a>
+                <a href ="women.html" style="text-decoration:none;"><button class = "button2" type="button">Women</button></a>
+                <a href ="uni.html" style="text-decoration:none;"><button class = "button3" type="button">Unisex</button></a>
+            </section>
+
+            <br>
+            <br>
+            <br>
+
+            <section class="newsletter">
+            <div class="bgimage-2">
+                <img src="../../images/products/background 5.jpg" style="width:100%">
+
+                <div class="bgimage-2-text">
+                    Fill up our newsletter form to receive news about discount offers and more!
+                    <br>
+                    <br>
+                    <a href="../newsletter.html" style="text-decoration:none;"><button class="newsletter-button" type ="button">Sign up now</button></a>
+                </div>
+            </div>
+            </section>
+
+            <!--For the product listing-->
+
+            <!-- for the men section  -->
+
+            <section class="men-container">
+                <div class = "Men">
+                    <p><b>Men's Watches</b></p>
+                </div>
+
+                <section class = "productlayout">
+                <div class="products">
+                    <li>
+                        <a href="p1.html"  style ="text-decoration:none;">
+                            <img src="../../images/products/watch1.png" class="watch1">
+                            <figcaption>Rolex Datejust 41</figcaption>
+                            <br>
+                            <figcaption><b>$15,900</b></figcaption>
+                            <figcaption style ="color:red;" class = "discounts"> -20% off</figcaption>
+                        </a>
+                    </li>
+                </div> 
+
+                <div class="products">
+                    <li>
+                        <a href="p2.html"  style ="text-decoration:none;">
+                            <img src="../../images/products/watch2.png" class="watch2">
+                            <figcaption>Zenith</figcaption>
+                            <br>
+                            <figcaption><b>$10,095</b></figcaption>
+                            <figcaption style ="color:red;" class = "discounts"> -10% off</figcaption>
+                        </a>
+                    </li>
+                </div>
+                            
+                <div class="products">
+                    <li>
+                        <a href="p3.html"  style ="text-decoration:none;">
+                            <img src = "../../images/products/watch3.png" class = "watch3">
+                            <figcaption>Rolex Oyster Perpetual 36</figcaption>
+                            <br>
+                            <figcaption><b>$6,195</b></figcaption>
+                            <figcaption style ="color:red;" class = "discounts">-5% off </figcaption>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="products">
+                    <li>    
+                        <a href="p4.html"  style ="text-decoration:none;">
+                            <img src="../../images/products/watch4.png" class = "watch4">
+                            <figcaption>Rolex Daytona</figcaption>
+                            <br>
+                            <figcaption><b>$24,825</b></figcaption>
+                            <figcaption style ="color:red;" class = "discounts"> -15% off</figcaption>
+                        </a>
+                    </li>
+                </div>
+                </section>
+
+                <br>
+                <br>
+
+                <section class = "productlayout">
+                <div class="products">
+                    <li>
+                        <a href="p10.html"  style ="text-decoration:none;">
+                            <img src="../../images/products/watch10.jpg" class="watch10">
+                            <figcaption>Smart Watch for Men</figcaption>
+                            <br>
+                            <figcaption><b>$195</b></figcaption>
+                            <figcaption style ="color:red;" class = "discounts"> -5% off</figcaption>
+                        </a>
+                    </li>
+                </div> 
+                <div class="products">
+                    <li>
+                        <a href="p12.html"  style ="text-decoration:none;">
+                            <img src="../../images/products/watch12.jpg" class="watch12">
+                            <figcaption>Garmin fēnix® 8 - 51 mm</figcaption>
+                            <br>
+                            <figcaption><b>$999</b></figcaption>
+                            <figcaption style ="color:red;" class = "discounts"> -20% off</figcaption>
+                        </a>
+                    </li>
+                </div> 
+                </section>
+            </section>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="bgimage-3">
+                <img src="../../images/products/background2.1.png" style="width:100%">
+            </div>
+
+            <!--For women section-->
+
+            <section class = "women-container">
+                <div class = "Women">
+                    <p> <b> Women's Watches</b></p>
+                </div>
+
+                <section class = "productlayout">
+                    <div class="products">
+                        <li>
+                            <a href="p5.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch5.png" class="watch5">
+                                <figcaption>Rolex Lady-Datejust</figcaption>
+                                <br>
+                                <figcaption><b>$4,125</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -20% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+
+                    <div class="products">
+                        <li>
+                            <a href="p6.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch6.png" class="watch6">
+                                <figcaption>Blancpain Villeret</figcaption>
+                                <br>
+                                <figcaption><b>$8,975</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -10% off</figcaption>
+                            </a>
+                        </li>
+                    </div>
+                        
+                    <div class="products">
+                        <li>
+                            <a href="p7.html"  style ="text-decoration:none;">
+                                <img src = "../../images/products/watch7.png" class = "watch7">
+                                <figcaption>Cartier Tank Louis Cartier</figcaption>
+                                <br>
+                                <figcaption><b>$6,250</b></figcaption>
+                                <figcaption style ="color:red;" class="discounts">-5% off </figcaption>  
+                                </a>
+                        </li>
+                    </div>
+
+                    <div class="products">
+                        <li>    
+                            <a href="p8.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch8.png" class = "watch8">
+                                <figcaption>Rolex Datejust 31</figcaption>
+                                <br>
+                                <figcaption><b>$14,125</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -15% off</figcaption>
+                            </a>
+                        </li>
+                    </div>
+                    </section>
+
+                    <br>
+                    <br>
+
+                    <section class = "productlayout">
+                    <div class="products">
+                        <li>
+                            <a href="p9.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch9.jpg" class="watch9">
+                                <figcaption>Smart Watch for Women</figcaption>
+                                <br>
+                                <figcaption><b>$31</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -5% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+                    <div class="products">
+                        <li>
+                            <a href="p11.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch11.jpg" class="watch11">
+                                <figcaption>Amazfit GTR Mini Smart Watch 43mm</figcaption>
+                                <br>
+                                <figcaption><b>$99</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -5% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+                </section>
+            </section>
+            <br>
+
+            <div class="bgimage-4">
+                <img src="../../images/products/background4.png" style="width:100%">
+            </div>
+
+            <!--Unisex group-->
+
+            <section class = "unisex-container">
+                <div class = "Unisex">
+                    <p> <b> Unisex Watches</b></p>
+                </div>
+
+                <section class = "unisex-productlayout">
+                    <div class="unisex-products">
+                        <li>
+                            <a href="p1.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch1.png" class="unisex-watch1">
+                                <figcaption>Rolex Datejust 41</figcaption>
+                                <br>
+                                <figcaption><b>$15,900</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -20% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+    
+                    <div class="unisex-products">
+                        <li>
+                            <a href="p2.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch2.png" class="unisex-watch2">
+                                <figcaption>Zenith</figcaption>
+                                <br>
+                                <figcaption><b>$10,095</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -10% off</figcaption>
+                            </a>
+                        </li>
+                    </div>
+                                
+                    <div class="unisex-products">
+                        <li>
+                            <a href="p3.html"  style ="text-decoration:none;">
+                                <img src = "../../images/products/watch3.png" class = "unisex-watch3">
+                                <figcaption>Rolex Oyster Perpetual 36</figcaption>
+                                <br>
+                                <figcaption><b>$6,195</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts">-5% off </figcaption>
+                            </a>
+                        </li>
+                    </div>
+    
+                    <div class="unisex-products">
+                        <li>    
+                            <a href="p4.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch4.png" class = "unisex-watch4">
+                                <figcaption>Rolex Daytona</figcaption>
+                                <br>
+                                <figcaption><b>$24,825</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -15% off</figcaption>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="unisex-products">
+                        <li>
+                            <a href="p5.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch5.png" class="unisex-watch5">
+                                <figcaption>Rolex Lady-Datejust</figcaption>
+                                <br>
+                                <figcaption><b>$4,125</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -20% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+
+                    <div class="unisex-products">
+                        <li>
+                            <a href="p6.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch6.png" class="unisex-watch6">
+                                <figcaption>Blancpain Villeret</figcaption>
+                                <br>
+                                <figcaption><b>$8,975</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -10% off</figcaption>
+                            </a>
+                        </li>
+                    </div>
+                        
+                    <div class="unisex-products">
+                        <li>
+                            <a href="p7.html"  style ="text-decoration:none;">
+                                <img src = "../../images/products/watch7.png" class = "unisex-watch7">
+                                <figcaption>Cartier Tank Louis Cartier</figcaption>
+                                <br>
+                                <figcaption><b>$6,250</b></figcaption>
+                                <figcaption style ="color:red;" class="discounts">-5% off </figcaption>  
+                                </a>
+                        </li>
+                    </div>
+
+                </section>
+                <section class = "unisex-productlayout">
+                    <div class="unisex-products">
+                        <li>    
+                            <a href="p8.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch8.png" class = "unisex-watch8">
+                                <figcaption>Rolex Datejust 31</figcaption>
+                                <br>
+                                <figcaption><b>$14,125</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -15% off</figcaption>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="products">
+                        <li>
+                            <a href="p10.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch10.jpg" class="unisex-watch10">
+                                <figcaption>Smart Watch for Men</figcaption>
+                                <br>
+                                <figcaption><b>$195</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -5% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+                    <div class="products">
+                        <li>
+                            <a href="p12.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch12.jpg" class="unisex-watch12">
+                                <figcaption>Garmin fēnix® 8 - 51 mm</figcaption>
+                                <br>
+                                <figcaption><b>$999</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -20% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+                    <div class="products">
+                        <li>
+                            <a href="p9.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch9.jpg" class="unisex-watch9">
+                                <figcaption>Smart Watch for Women</figcaption>
+                                <br>
+                                <figcaption><b>$31</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -5% off</figcaption>
+                            </a>
+                        </li>
+                    </div> 
+                    <div class="products">
+                        <li>
+                            <a href="p11.html"  style ="text-decoration:none;">
+                                <img src="../../images/products/watch11.jpg" class="unisex-watch11">
+                                <figcaption>Amazfit GTR Mini Smart Watch 43mm</figcaption>
+                                <br>
+                                <figcaption><b>$99</b></figcaption>
+                                <figcaption style ="color:red;" class = "discounts"> -5% off</figcaption>
+                            </a>
+                        </li>
+                    </div>
+                </section>
+            </section>
+
+            <br>
+            <br>
+
+            <!--Add smart watches as well!-->
+
+        <!--Footer segment-->
+
+        <footer>
+            <div class ="footer-color" style="background-color:rgb(17, 19, 41);">
+                <div class="footer-container">
+
+                    <div class="left-side-footer">
+                        <div class="left-side-footer-1">
+                            <img src ="../../images/Logo3 (1).png" width="200" height="200" alt="icon" style="object-fit: cover;">
+
+                            <ul>
+
+                            <li>
+                            <a href = "../../watch.html" style="text-decoration: none;" class="footer-navlinks">
+                                Home
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "products.html" style="text-decoration: none;" class="footer-navlinks">
+                                Products
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../Blog/watch.html" style="text-decoration: none;" class="footer-navlinks">
+                                Blog
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../Research/research_home.html" style="text-decoration: none;" class="footer-navlinks">
+                                Research
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../About us/index.html" style="text-decoration: none;" class="footer-navlinks">
+                                About us
+                            </a>
+                            </li>
+
+                            </ul>
+                        </div> 
+
+                        <hr style="width:570px;">
+
+                        <div class="left-side-footer-2">
+                            <a href="https://www.facebook.com">
+                                Facebook
+                            </a>
+                            <a href="https://www.instagram.com">
+                                Instagram
+                            </a>
+                            <a href="https://www.X.com">
+                                X
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                Linkedin
+                            </a>
+                            <a href="https://www.youtube.com/">
+                                Youtube
+                            </a>
+                        </div>
+
+                        <div class="left-side-footer-end">
+                            © 2024-2025 <a href="../../watch.html" style="color:white;">Chérie.com</a>
+                        </div>
+                    </div>
+
+                    <div class="right-side-footer">
+                        <div class="subscribe-container">
+                            <div class="subscribe-text">
+                                <h3>Subscribe to Chérie News</h3>
+                                <br>
+                                <p>Sign up for the latest news about Chérie, delivered to you weekly.</p>
+                                <br>
+                                
+                                <div class="subscribe-input">
+                                <form id = "emailForm">
+                                        <input type="email" id="email" name="email" placeholder="Enter Email Address">
+
+                                <!--For validating the form-->
+                                <script src="../../javascript/emailValidate.js"></script>
+
+                                <br>
+                                <button type="submit" class="subscribe-button">Subscribe</button>
+                                </form>
+                                
+                                <br>
+                                </div>
+
+                                <br>
+                                <p class="end">Protected by <span class="highlight">reCAPTCHA.</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

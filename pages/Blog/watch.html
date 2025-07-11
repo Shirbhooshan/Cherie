@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="viewport"content=width:device-width, initial-scale=1.0, user-scalable="no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <title> Blog </title>
+
+    <!--Stylesheet-->
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <style>
+
+        .top-container{
+            position:fixed;
+            margin-top:-100px;
+            padding:0px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .search-box{
+            padding: 10px;
+            width: 200px;
+        }
+        .search-box input{
+            font-size:18px;
+            padding:10px;
+            border-radius:8px;
+            border:none;
+            cursor:text;
+            background-color:rgb(237, 235, 235);
+        }
+        .search-box input:hover{
+            background-color:rgb(228, 225, 225);
+            transition:0.4s;
+        }
+        nav{
+            margin-top:0;
+            border-bottom:1px groove grey;
+            padding:15px;
+            width: 100%;
+            background-color: white;
+        }
+        main{
+            padding-top:35px;
+        }
+        *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        }
+        ul{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            animation: fadeIn 0.2s ease-in-out; /* for cooler startup */
+        }
+
+        @keyframes fadeIn {
+        from {
+        opacity: 0; /* start fully transparent */
+        }
+        to {
+        opacity: 1; /* end fully visible */
+        }
+}
+
+/* for search bar */
+
+.search-container{
+    margin-left:70%;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="top-container">
+
+<!--Icon bar-->
+
+        <div class="icon-bar">
+                            
+            <div class="icon-holder">
+                <a href="#">
+                <img src ="../../images/Logo.png" width="150px;" height="60px;" alt = "logo" style="object-fit: cover;">
+                </a>
+            </div>
+
+            <input type="text" class = "search-bar" placeholder="Search..." onclick="showalert()">
+            <a href="#"><button class="authorization-buttons" onclick="showalert()">Log in</button></a>
+            <a href="#"><button class="authorization-buttons" onclick="showalert()">Register</button></a>
+            <script>
+                function showalert() {
+                    alert("This feature is not available right now.");
+                }
+                </script>
+        </div>
+
+
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <div class="nav-links">
+                        <li><a href="../../watch.html" style="text-decoration:none;">Home</a></li>
+                        <li><a href="../Products/products.html" style="text-decoration:none;">Products</a></li>
+                        <li><a href="watch.html" style="text-decoration:none;">Blog</a></li>
+                        <li><a href="../Research/research_home.html" style="text-decoration:none;">Research</a></li>
+                        <li><a href="../About us/index.html" style="text-decoration:none;">About us</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="spacer">
+
+     <main>
+        <header>
+            <section id="blog">
+                <div class="blog-heading">
+                    <span> Our Recent Posts</span>
+                    <h3> Watches </h3>
+                </div>
+            </section>
+            <div class="row">
+                <div class="search-container">
+                    <div class="search-box">
+                      <input type="text" class="from-control-quick-search" Placeholder="Search...." onclick="showalert()">
+                    </div>
+                </div>
+            </div>
+
+            <!--container-->
+            <div class="blog-container">
+
+            <!--box-1-->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-img">
+                    <img alt="blog" src="../../images/blog/technology.jpg">
+                </div>
+                <!--text-->
+                <div class="blog-text">
+                    <span> 5 February 2023 / Technology</span>
+                    <a href="#" class="blog-title"> Technology: Friend or Foe?</a>
+                    <p> One of the greatest questions that still leaves a person ponder...</p>
+                    <a href="Blog1.html">
+                    <button style="width:100%;"> Read More </button>
+                    </a>
+                </div>
+            </div>
+
+            <!--box-2-->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-img">
+                    <img alt="blog" src="../../images/blog/impactsoftech.jpg">
+                </div>
+                <!--text-->
+                <div class="blog-text">
+                    <span> 30 August 2021 / Technology / Impacts</span>
+                    <a href="#" class="blog-title">Impacts of Technology</a>
+                    <p> Learn about the positive and negative impacts technology has imparted..</p>
+                    <a href="Blog2.html">
+                    <button style="width:100%;"> Read More </button>
+                    </a>
+                </div>
+            </div>
+
+            <!--box-3-->
+            <div class="blog-box">
+                <!--img-->
+                <div class="blog-img">
+                    <img alt="blog" src="../../images/blog/watchtech.avif">
+                </div>
+                <!--text-->
+                <div class="blog-text">
+                    <span> 25 May 2023 / Technology / Watches</span>
+                    <a href="#" class="blog-title">Technology and online commerce</a>
+                    <p> Learn how technology has helped sell goods like watches..</p>
+                    <a href="Blog3.html">
+                    <button style="width:100%;"> Read More </button>
+                    </a>
+                </div>
+            </div>
+
+            <!--box-4-->
+                <div class="blog-box">
+                    <!--img-->
+                    <div class="blog-img">
+                        <img alt="Photo" src="../../images/blog/Screenshot 2025-01-10 164507.png">
+                    </div>
+                    <!--text-->
+                    <div class="blog-text">
+                        <span> 15 December 2024 / Latest model watch / Premium Quality</span>
+                        <a href="#" class="blog-title">Hands-On: More than a watch, its a legacy on your wrist Watch by Rolex</a>
+                        <p> Crafted with sleek stainless steel case, the watch boasts a minimalist dial accentuated with polished hour markers, delivering a modern yet classic look </p>
+                        <button onclick="showalert()"> Read More </button>
+                        <script>
+                        function showalert() {
+                            alert("This feature is not available");
+                        }
+                        </script>
+                    </div>
+                </div>
+
+            <!--box-5-->
+                <div class="blog-box">
+                    <!--img-->
+                    <div class="blog-img">
+                        <img alt="blog" src="../../images/blog/Screenshot 2025-01-10 164427.png">
+                    </div>
+                    <!--text-->
+                    <div class="blog-text">
+                        <span> 18 June 2024 / Rolex / Premium Quality</span>
+                        <a href="#" class="blog-title"> Hands-On: Timeless design for every second Watch By Rolex </a>
+                        <p> The Emotion Of Time: Showcase the emotional connection to special moments marked by your timepieces</p>
+                        <button onclick="showalert()"> Read More </button>
+                        <script>
+                        function showalert(){
+                            alert("This feature is not available");
+                        }
+                        </script>
+                    </div>
+                </div>
+
+            <!--box-6-->
+                <div class="blog-box">
+                    <!--img-->
+                    <div class="blog-img">
+                        <img alt="blog" src="../../images/blog/Screenshot 2025-01-10 173849.png">
+                    </div>
+                    <!--text-->
+                    <div class="blog-text">
+                        <span> 23 November 2024 / Rolex  / Premium Quality  </span> 
+                        <a href="#" class="blog-title"> The Iconic Batman: A Timepiece of Legendary Proportions Watch By Rolex </a>
+                        <p> The Rolex Batman as a limited-edition model blends Rolex's excellent artistry with the famous appeal of the Dark Knight resulting in a watch that is as refined as it is unique </p>
+                        <button onclick="showalert()"> Read More </button>
+                        <script>
+                        function showalert() {
+                            alert("This feature is not available");
+                        }
+                        </script>
+                    </div>
+                </div>
+
+            <!--box-7-->
+                <div class="blog-box">
+                    <!--img-->
+                    <div class="blog-img">
+                    <img alt="blog" src="../../images/blog/Screenshot 2025-01-11 103836.png">
+                    </div>
+            
+                    <!--text--> 
+                    <div class="blog-text">
+                        <span> 15 March 2024 / Rolex / Premium Quality </span>
+                        <a href="#" class="blog-title"> Timekeepers for those who treasure every second </a>
+                        <p> The Wearable Masterpiece: Emphasize your watches as more then functional- they're works of art that complement personal style. Highlight materials and constrution built for advantures, yet sophisticated enough for any occasion. </p>
+                        <button onclick="showalert()"> Read More </button>
+                        <script>
+                        function showalert() {
+                            alert("This feature is not available");
+                        }
+                        </script>
+                    </div>
+                </div>
+            
+            <!--box-8-->
+                <div class="blog-box">
+                    <!--img-->
+                    <div class="blog-img">
+                        <img alt="blog" src="../../images/blog/Screenshot 2025-01-17 084429.png">
+                    </div>
+                    <!--text-->
+                    <div class="blog-text">
+                        <span> 19 February 2024 / Smart Watch / Premium Quality </span>
+                        <a href="#" class="blog-title"> The Emotion of time </a>
+                        <p> Showcase the emotional connection to special moments marked by your timepieces</p>
+                        <button onclick="showalert()"> Read More </button>
+
+                            <script>
+                                function showalert() {
+                                    alert("This feature is not available");
+                                }
+                            </script>
+                    </div>
+                </div>
+
+            <!--box-9-->
+                <div class="blog-box">
+                    <!--img-->
+                    <div class="blog-img">
+                        <img alt="blog" src="../../images/blog/Screenshot 2025-01-11 104047.png">
+                    </div>
+                    <!--text-->
+                    <div class="blog-text">
+                        <span> 16 April 2024 / Rolex / Premium Quality </span>
+                        <a href="#" class="blog-title"> Oceanic Horizen </a>
+                        <p> The luminious hands and makers ensure visibility even in murky waters, while corrosion-resistant titanium case gurantees durability in the harsest environments.</p>
+                        <button onclick="showalert()"> Read More </button>
+
+                        <script>
+                            function showalert() {
+                                alert("This feature is not available");
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </header>
+     </main>
+    
+</div>
+        <!--Footer segment-->
+
+        <footer>
+            <div class ="footer-color" style="background-color:rgb(17, 19, 41);">
+                <div class="footer-container">
+
+                    <div class="left-side-footer">
+                        <div class="left-side-footer-1">
+                            <img src ="../../images/Logo3 (1).png" width="200" height="200" alt="icon" style="object-fit: cover;">
+
+                            <ul>
+
+                            <li>
+                            <a href = "../../watch.html" style="text-decoration: none;" class="footer-navlinks">
+                                Home
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../Products/products.html" style="text-decoration: none;" class="footer-navlinks">
+                                Products
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "watch.html" style="text-decoration: none;" class="footer-navlinks">
+                                Blog
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../Research/research_home.html" style="text-decoration: none;" class="footer-navlinks">
+                                Research
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../About us/index.html" style="text-decoration: none;" class="footer-navlinks">
+                                About us
+                            </a>
+                            </li>
+
+                            </ul>
+                        </div> 
+
+                        <hr style="width:570px;">
+
+                        <div class="left-side-footer-2">
+                            <a href="https://www.facebook.com">
+                                Facebook
+                            </a>
+                            <a href="https://www.instagram.com">
+                                Instagram
+                            </a>
+                            <a href="https://www.X.com">
+                                X
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                Linkedin
+                            </a>
+                            <a href="https://www.youtube.com/">
+                                Youtube
+                            </a>
+                        </div>
+
+                        <div class="left-side-footer-end">
+                            © 2024-2025 <a href="../../watch.html" style="color:white;">Chérie.com</a>
+                        </div>
+                    </div>
+
+                    <div class="right-side-footer">
+                        <div class="subscribe-container">
+                            <div class="subscribe-text">
+                                <h3>Subscribe to Chérie News</h3>
+                                <br>
+                                <p>Sign up for the latest news about Chérie, delivered to you weekly.</p>
+                                <br>
+                                
+                                <div class="subscribe-input">
+                                <form id = "emailForm">
+                                        <input type="email" id="email" name="email" placeholder="Enter Email Address">
+
+                                <!--For validating the form-->
+                                <script src="../../javascript/emailValidate.js"></script>
+
+                                <br>
+                                <button type="submit" class="subscribe-button">Subscribe</button>
+                                </form>
+                                
+                                <br>
+                                </div>
+
+                                <br>
+                                <p class="end">Protected by <span class="highlight">reCAPTCHA.</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
