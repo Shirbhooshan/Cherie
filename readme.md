@@ -8,6 +8,7 @@ Cherie is a luxury-themed watch website developed as part of a group coursework 
 
 ## Project Structure
 
+```
 Cherie/
 │── watch.html
 │── css/
@@ -15,6 +16,7 @@ Cherie/
 │── images/
 │── pages/
 │── wireframes/
+```
 
 ---
 
