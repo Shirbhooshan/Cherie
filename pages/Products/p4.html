@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rolex Datejust 41</title>
+
+        <!--meta tags-->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Watch, Website">
+        <meta name="description" content = "Watch Market">
+        <meta name="author" content="Chérie">
+        <meta http-equiv="refresh" content="15">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel = "stylesheet" href="../../css/style.css">
+        <style>
+        body{
+        margin:0;
+        }   
+        
+        .container{
+    padding: 10px 100px;
+    display:flex;
+    margin:25px auto;  /*auto, automically adjusts based on the 25px*/
+    align-items:flex-start;  /*start of the flex*/
+    justify-content: flex-start;  /*adds content to the start of the flex*/
+    max-width: 1200px;  /*max width the element can have is 1200px*/
+    gap:20px;
+}
+
+.watch img{
+    border-radius:16px;
+    object-fit: cover;
+}
+
+.new-watches{
+    border-radius:18px;
+    object-fit: contain;
+}
+
+.offer{
+    font-size:20px;
+    font-weight:normal;
+    color:rgb(0, 0, 0);
+    margin:0;
+}
+
+.offer-container{
+    text-align:center;
+    background-color: rgb(237, 235, 235);
+    border:2px;
+    border-style:groove;  /*type of border*/
+    border-radius: 4px;
+    margin-bottom:0px; /* gap between offer and name */
+    width:100%; /* for covering the whole row */
+    padding:25px;
+}
+
+.text{
+    font-size:20px;
+    padding-left:15px;
+    margin-left:-10px;
+    max-width:500px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    flex-direction: column; /* for vertical viewing*/
+    align-items: flex-start;  /*aligning items from the start of flexbox*/
+    gap:10px;
+    margin-top:50px; /*bring it down*/
+}
+
+.name{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.gender{
+    font-size: 18px;
+    color: rgb(83, 82, 82);
+}
+
+.price{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    font-weight:normal;
+    margin-bottom:5px;
+}
+
+.price + figcaption{
+    font-size:40px;
+    font-weight:bold;
+    color: black;
+    margin-bottom:20px;
+}
+
+.buy{
+    display: inline-block;
+    width:300px;
+    padding: 15px 20px;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    background-color: rgb(41, 41, 98);
+    border:none;
+    border-radius: 8px;
+    text-align:center;
+    text-transform: uppercase;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.cart{
+    display: inline-block;  /*sets it in form of blocks in the same line*/
+    width:300px;
+    padding: 15px 20px;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    background-color: rgb(255, 255, 255);
+    border:groove;
+    border-radius: 8px;
+    text-align:center;
+    text-transform: uppercase;  /*changes all text to uppercase*/
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.buy:hover{
+    background-color:rgb(67, 67, 151);
+    transition:0.4s;
+}
+
+.cart:hover{
+    background-color:rgb(241, 239, 239);
+    transition:0.4s;
+}
+
+/* review section */
+
+.review-section {
+    max-width: 1000px;  /*total width it can have is 1000px*/
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:10%;
+}
+
+header h2{
+    text-align: left;
+    margin-bottom: 45px;
+    font-size: 35px;
+    color: #252424;
+}
+
+.log-in-warning{
+    text-align:center;
+    font-size:25px;
+    border: 2px;
+    border-style: groove;
+    border-radius:5px;
+    padding:15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin-left:10%;
+    margin-right:10%;
+    cursor:pointer;
+}
+
+.log-in-warning:hover{
+    background-color:#ededed;
+    transition:0.4s;
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px groove #ddd;
+    padding-bottom: 25px;
+}
+
+.review img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-content {
+    flex: 1;  /*it is first in line of the flexbox content*/
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between; /*space between text and star */
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #3c3b3b;
+}
+        </style>
+    </head>
+
+    <body>
+<!--
+    for the nav bar
+    <nav style="background-color: rgb(29, 21, 61);" class = "navbar">
+        <table>
+            <tr>
+                <th> Home </th>
+                <th> Products</th>
+                <th> Research</th>
+                <th> About</th>
+            </tr>
+        </table>
+    </nav>
+-->
+    
+<section class="new-year">
+    <header>Discounts on every watch, Enjoy the New Years Season!!</header>
+</section>
+
+<div class="icon-bar">
+        
+        <div class="icon-holder">
+            <a href="/pages/Products/products.html">
+            <img src ="../../images/Logo.png" width="150px;" height="60px;" alt = "logo" style="object-fit: cover;">
+            </a>
+        </div>
+
+        <input type="text" class = "search-bar" placeholder="Search..." onclick="showalert()">
+        <a href="#"><button class="authorization-buttons" onclick="showalert()">Log in</button></a>
+        <a href="#"><button class="authorization-buttons" onclick="showalert()">Register</button></a>
+        <script>
+            function showalert() {
+                alert("This feature is not available right now.");
+            }
+            </script>
+</div>
+
+<!--
+
+For the Go back button
+<div class="back-search-container"> <!-for only the go-back 
+    -For the Go back button
+    
+    <a href = "/products.html" style = "text-decoration:none;color:rgb(166, 136, 77);"><p style="padding-left:50px;" class = "go-back"> Go back</p></a>
+</div>
+-->
+
+<!-- the new go back button-->
+
+<div class="goback-container">
+    <button class="goback-button" onclick ="history.back()">Go Back</button> <!--the history.goback() is a pre-built function to redirect back page-->
+</div>
+
+
+    <!-- the image section and details-->
+
+
+        
+    <div class="container">
+        <figure class ="watch">
+            <img src ="../../images/Products/watch4.png" width="580px" height ="580px" alt ="rolex">  
+        </figure>  
+
+        <div class="text">
+
+        <!-- The offer in the right side -->
+        <div class="offer-container">
+        <p class = "offer">
+            Enjoy the New Years Discount!
+        </p>
+        </div>
+            
+        <p class ="name">Rolex Daytona</p>
+        <span class="product-description-text">NEW Daytona 116503 Champagne</span>
+        <figcaption class="gender">For <a href="men.html" style="text-decoration:none;color:rgb(116, 118, 118);">Men</a>, <a href="uni.html" style="text-decoration:none;color:rgb(116, 118, 118);">Unisex</a></figcaption>
+        <figcaption class="price"><s>$24,825</s> -15%</figcaption>
+        <figcaption style="font-size:60px">$21,101</figcaption>
+        <button type = "submit" class = "buy" style="font-weight:bold;" onclick="alert('Shipping is not available in your country.')"><a href="#" style ="text-decoration:none;color:white;"> Buy </a></button>
+        <!-- for the add card, add a js alert -->
+        <button type = "submit" class = "cart" style="font-weight:bold;" onclick="alert('Added to Cart!')"><a href="#" style ="text-decoration:none;color:rgb(0, 0, 0);"> Add to Cart </a></button>
+        </div>
+        <br>
+    </div> 
+
+    <hr style = "width:1270px;">
+
+    <!--Description section-->
+    <div class="watch-description-section">
+        <header><h2>Description</h2></header>
+        <p>
+            Stainless steel casing with yellow gold.
+            Brand new watch without any signs of wearing, is included with the manufacturer's box and a warranty card.
+        </p>
+    </div>
+
+    <hr style = "width:1270px;"> 
+
+    <!-- Review section -->
+
+    <div class = "review-section">
+        <header><h2>Reviews</h2></header>
+
+
+        <!--
+        <div class = "log-in-warning">
+            <a href="#" style="text-decoration:none;color:black;">
+            Log in to leave a comment.
+            </a>  
+        </div>
+        -->
+        <div class="comment">
+            <form id="comment">
+                <label for = "username">Username:</label>
+                <input type ="text" id ="username" name ="username" placeholder="Enter your username" required>
+
+                <textarea id = "comments" name = "comments" placeholder = "Enter comment" rows="3"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- first review -->
+
+        <div class = "review">
+            <img src ="../../images/Products/usericon.png" width="90px" height ="90px">
+
+            <div class = "review-content">
+                <div class = "review-header">
+                    <p class = "user-name">Mcnogle Queens</p>
+                    <div class = "rating"><img src="../../images/products/5 star.png" style="object-fit: contain;"></div>
+                </div>
+                <p class="review-text"> This watch is great!</p>
+            </div>
+        </div>
+
+        <!-- second review  -->
+
+        <div class = "review">
+            <img src ="../../images/Products/usericon.png" width="90px" height ="90px">
+
+            <div class = "review-content">
+                <div class = "review-header">
+                    <p class = "user-name">John Quilt</p>
+                    <div class = "rating"><img src="../../images/products/4 star.png" style="object-fit: contain;"></div>
+                </div>
+                <p class="review-text"> The delivery was slow but the watch is of great quality!</p>
+            </div>
+        </div>
+
+        <!-- third review  -->
+
+        <div class = "review">
+            <img src ="../../images/Products/usericon.png" width="90px" height ="90px">
+
+            <div class = "review-content">
+                <div class = "review-header">
+                    <p class = "user-name">Barbara Johnson</p>
+                    <div class = "rating"><img src="../../images/products/1 star.png" style="object-fit: contain;"></div>
+                </div>
+                <p class="review-text"> I didn't like the color.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--JS SCRIPT FOR COMMENTS-->
+    <script>
+        document.getElementById('comment').addEventListener('submit',function(event)
+        {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const comments = document.getElementById('comments').value;
+
+        if (comments === '')
+        {
+        alert('Please leave a comment below.');
+        }
+        else{
+        alert('Commented successfully, Please be patient while it gets posted.');
+        }
+    });
+    </script>
+
+
+       <!--Footer segment-->
+
+       <footer>
+        <div class ="footer-color" style="background-color:rgb(17, 19, 41);">
+            <div class="footer-container">
+
+                <div class="left-side-footer">
+                    <div class="left-side-footer-1">
+                        <img src ="../../images/Logo3 (1).png" width="200" height="200" alt="icon" style="object-fit: cover;">
+
+                        <ul>
+
+                        <li>
+                        <a href = "../../watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Home
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "products.html" style="text-decoration: none;" class="footer-navlinks">
+                            Products
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Blog/watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Blog
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Research/research_home.html" style="text-decoration: none;" class="footer-navlinks">
+                            Research
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../About us/index.html" style="text-decoration: none;" class="footer-navlinks">
+                            About us
+                        </a>
+                        </li>
+
+                        </ul>
+                    </div> 
+
+                    <hr style="width:570px;">
+
+                    <div class="left-side-footer-2">
+                        <a href="https://www.facebook.com">
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com">
+                            Instagram
+                        </a>
+                        <a href="https://www.X.com">
+                            X
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            Linkedin
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            Youtube
+                        </a>
+                    </div>
+
+                    <div class="left-side-footer-end">
+                        © 2024-2025 <a href="../../watch.html" style="color:white;">Chérie.com</a>
+                    </div>
+                </div>
+
+                <div class="right-side-footer">
+                    <div class="subscribe-container">
+                        <div class="subscribe-text">
+                            <h3>Subscribe to Chérie News</h3>
+                            <br>
+                            <p>Sign up for the latest news about Chérie, delivered to you weekly.</p>
+                            <br>
+                            <div class="subscribe-input">
+                            <form id = "emailForm">
+                                <input type="email" id="email" name="email" placeholder="Enter Email Address">
+
+                            <!--For validating the form-->
+                            <script src="../../javascript/emailValidate.js"></script>
+
+                            <br>
+                            <button type="submit" class="subscribe-button">Subscribe</button>
+                            </form>
+                            <br>
+                            </div>
+
+                            <br>
+                            <p class="end">Protected by <span class="highlight">reCAPTCHA.</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

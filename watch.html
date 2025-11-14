@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chérie</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.main-content-container{
+    background: black;
+    color: white;
+}
+
+@keyframes fadeIn {
+        from {
+        opacity: 0; /* start fully transparent */
+        }
+        to {
+        opacity: 1; /* end fully visible */
+        }
+    }
+    
+svg{
+    width: 25px;
+}
+header{
+    width: 700px;
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition:  0.3s ;
+}
+.menu a:hover{
+    color: rgb(185, 54, 54);
+}
+header .logo{
+    font-weight: bold;
+    color: white;
+
+}
+header .menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+    color: aqua;
+}
+/* css slider*/
+.slider{
+    height: 100vh;
+    margin-top: -50px;
+    position: relative;
+}
+.slider .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.slider .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .list .item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, black 10%, transparent
+    );
+}
+.slider .list .item .content{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1;
+}
+.slider .list .item .content p:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.slider .list .item .content h2{
+    font-size: 50px;
+    margin: 0;
+}
+.slider .list .item.active{
+    opacity: 1;
+    z-index: 10;
+}
+@keyframes showContent {
+    to{
+        transform: translateY(0);
+        filter:blur(0);
+        opacity: 1;
+    }
+}
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3){
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;  
+}
+.slider .list .item.active h2{
+    animation-delay: 1s;
+}
+.slider .list .item.active p:nth-child(3){
+    animation-duration: 1.3s;
+}
+.arrows{
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+.arrows button{
+    background-color: gray;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color:aliceblue;
+    transition: .5s;
+
+}
+.arrows button:hover{
+    background-color: white;
+    color: black;
+}
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: right;
+}
+.thumbnail::-webkit-scrollbar{
+    width: 0;
+}
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0;
+}
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail .item.active{
+    filter: brightness(1.5);
+}
+.thumbnail .item .content{
+    position: absolute;
+    inset: auto 1px 1px 1px;
+    color: aqua;
+    width: 5px;
+}
+@media screen and (max-width: 678px) {
+    .thumbnail{
+        justify-content: start;
+    }
+    .slider .list .item .content h2{
+        font-size: 60px;
+    }
+    .arrows{
+        top:10%;
+    }
+}
+.video-container{
+    display: flex;
+    justify-content: 50px;
+    align-items: 50px;
+    height: 50vh;  
+    background-image: url(images/home/pexels-abby-chung-371167-1106468.jpg);
+    padding:0px;
+    box-shadow: inset 0 0 10px rgb(88, 182, 95);
+}
+video{
+    max-width:700px;
+    height: auto;
+    margin-left: 60px;
+    border-radius: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+.text-container{
+
+    margin-left:15px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top:-3%;
+    padding:35px 100px;
+
+   
+h2{
+    color: rgb(255, 255, 255);
+    animation: glow 1.5s ease-in-out infinite;
+    font-size:40px;
+    text-align: center;
+}
+h3{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin-top:-15px;
+    color:rgb(255, 255, 255);
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+    top:10px;
+    color:white;
+}
+}
+ 
+/* Define keyframe for animations */
+@keyframes fadeIn {
+    0% {transform: translateX(-100); opacity:0; }
+    100% { transform: translateX(0); opacity: 1; } 
+}
+
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 5px rgb(255, 145, 0), 0 0 10px rgb(230, 200, 173);}
+    50% {text-shadow: 0 0 15px rgb(255, 179, 0), 0 0 20px rgb(230, 213, 173); }
+}
+
+.blog-container{
+    margin-top:50px; /* margin at the top of 50px */
+    background-color: white;
+}
+
+.blog-content{
+    display:flex;
+    align-items: center; /* aligns all flex box items in center*/
+    justify-content: center; /* type will be center */
+    gap:50px;
+}
+
+.blog-text h1{
+    font-size:45px;
+    text-align: center;
+}
+
+.blog-content img{
+    border-radius: 16px;
+    object-fit: contain;
+    filter: blur(1px);
+}
+
+.blog-text button{
+    padding:20px 25px;
+    width:50%;
+    border:none;
+    font-size:30px;
+    background-color: rgb(145, 218, 145);
+    background-color: hsl(350, 81%, 65%);;
+    color:white;
+    cursor:pointer;
+    border-radius:8px;
+    margin-left:150px;
+    box-shadow: 2px 2px 4px rgb(50, 55, 123);
+}
+
+.blog-text button:hover{
+    transition:0.4s;
+    background-color:rgb(106, 187, 106);
+    background-color:hsl(344, 60%, 35%);
+}
+
+.research-container{
+    margin-top:50px; /* margin at the top of 50px */
+    background-color: rgb(86, 205, 118);
+    background-image: url(images/home/research.jpg);
+    background-size: cover;
+    padding:90px;
+}
+
+.research-content{
+    display:flex;
+    align-items: center; /* aligns all flex box items in center*/
+    justify-content: center; /* type will be center */
+    gap:50px;
+    color:white;
+}
+
+.research-text h1{
+    font-size:60px;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgb(186, 106, 42);
+}
+
+.research-content img{
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+.research-text button{
+    padding:15px 20px;
+    width:50%;
+    border:none;
+    font-size:30px;
+    background-color: rgb(145, 218, 145);
+    background-color: hsl(212, 58%, 65%);;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+    border-radius:8px;
+    margin-left:110px;
+    box-shadow: 2px 2px 4px rgb(50, 55, 123);
+}
+
+.research-text button:hover{
+    transition:0.4s;
+    background-color:rgb(106, 187, 106);
+    background-color:hsl(215, 47%, 50%);
+}
+
+    </style>
+</head>
+<body>
+<div class = "main-content-container">
+    <!-- header -->
+     <header>
+        <div class="logo" style="font-size:35px;">Chérie</div>
+             <ul class="menu" style="font-size:20px;">
+                <li><a href="watch.html" style="color:rgb(185, 54, 54);">Home</a></li>
+                <li> <a href="pages/Products/products.html">Product</a></li>
+                <li><a href="pages/Blog/watch.html">Blog</a></li>
+                <li><a href="pages/Research/research_home.html">Research</a></li>
+                <li><a href="pages/About us/index.html">About Us</a></li>
+             </ul>
+     </header>
+
+     <!-- slider -->
+      <div class="slider ">
+        <!-- list item -->
+        <div class="list">
+         <div class="item active">
+            <img src="images/home/watch.png">
+            <div class="content">
+                <p>WATCH</p>
+                <h2>Classic</h2>
+                    <p>Timeless Elegance, Crafted To Last
+
+                    Redefine timeless sophistication. A classic watch isn't just
+                    about time. Its about making every moment unforgettable.
+                    </p>
+            </div>
+          </div>
+
+        <div class="item">
+            <img src="images/home/watch7.jpg">
+            <div class="content">
+                <p>WATCH</p>
+                <h2>Minimalistic</h2>
+                    <p>
+                        Simple And Chic in one go
+                  Where Every Second Tells A Story
+
+                   Simplicity at its finest. A minimalistic watch for those who 
+                   value elegance in every moment. 
+                   Uncluttered. Timeless. Perfectly you.
+                    </p>
+              </div>
+            </div>
+
+          <div class="item">
+            <img src="images/home/watch5.jpg">
+            <div class="content">
+            <p>WATCH</p>
+                <h2>Luxury</h2>
+                <p>     
+                    Where Elegance Meets Precision.
+                    Experience the art of timekeeping. A Luxury watch that emodies
+                    prestige and perfection. Luxury beyound time.
+                </p>
+            </div>
+         </div>
+    </div>
+  </div>
+
+    <!-- button arrows -->
+     <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+     </div>
+
+    <!-- thumbnail-->
+     <div class="thumbnail">
+
+        <div class="item active">
+          <img src="images/home/watch.png">
+            <div class="content">
+              Classic
+            </div>
+        </div>
+        
+        <div class="item">
+            <img src="images/home/watch7.jpg">
+            <div class="content">
+              Minimalistic
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/home/watch5.jpg">
+            <div class="content">
+              Luxury
+        </div>
+        </div>
+      </div>
+
+     <script src="javascript/app.js"></script>
+    </div>
+
+    <!--New arrivals section-->
+    <div class="new-arrivals-container-color">
+        <div class ="new-arrivals-container">
+            <div class ="new-arivals-content">
+                <div class="new-arrivals-image">
+                    <img src="images/products/watch3.png" width="500px" height="500px">
+                </div>
+
+                <div class="new-arrivals-text">
+                <p class="name">The <span style="color:green;"> Rolex Oyster Perpetual 36</span></p>
+                <span style="color:red;padding:0 8px;">New Arrival</span>
+                <p class="cut-price"><s>$6195</s> -5%</p>
+                <h2>Just for $5,885</h2>
+
+                <a href="pages/Products/products.html">
+                    <button class="view-more-button">View more</button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video-->
+    <div class="video-container">
+        <!-- Text -->
+        <div class="text-container">
+            <br>
+                <h2>Chérie: Time Starts Now</h2>
+                <h3>Keeping It Timeless.<h3>
+            <p> 
+                "At Chérie, we create watches that provide touch of luxury, class or Simplicity.
+                Whatever your mood desire. We have worked hard to reach all satisfaction
+                level with the perfect quality craftmenship.
+                With the help of our passionate team of designers, Together we craft quality 
+                and innovation."
+            </p>
+        </div>
+        <video muted autoplay loop >
+            <source src="images/home/watch3 (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+       </video>
+    </div>
+
+    <!--blog section-->
+    <div class="blog-container">
+        <div class="blog-content">
+            <div class="blog-text">
+                <h1>See what's trending <span style="color:rgb(247, 85, 85);font-size:45px;">news.</span></h1>
+                <a href="pages/Blog/watch.html">
+                    <button class="see-more-blog-button">See more</button>
+                </a>
+            </div>
+
+            <div class="blog-image">
+                <img src="images/home/blog.png" width="600px" height="500px" style="object-fit: cover;">
+            </div>
+        </div>
+    </div>
+
+    <!--research section-->
+    <div class="research-container">
+        <div class="research-content">
+            <div class="research-text">
+                <h1>View our <span style="color:rgb(247, 231, 85);font-size:60px;">Research</span></h1>
+                <a href="pages/Research/research_home.html">
+                    <button class="see-more-research-button">See more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--about us section-->
+    <div class="about-us-container">
+        <div class="about-us-content">
+            <div class="about-us-image">
+            <img src="images/home/1-2-team-free-download-png.png" width="600px" height="600px" style="object-fit: cover;">
+            </div>
+
+            <div class="about-us-text">
+                <h1>Meet the amazing team behind <span style="color:rgb(247, 85, 85);">Chérie.</span></h1>
+                <a href="pages/About us/index.html">
+                    <button class="see-more-button">See more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Footer segment-->
+
+       <footer>
+        <div class ="footer-color" style="background-color:rgb(17, 19, 41);">
+            <div class="footer-container">
+
+                <div class="left-side-footer">
+                    <div class="left-side-footer-1">
+                        <img src ="images/Logo3 (1).png" width="200" height="200" alt="icon" style="object-fit: cover;">
+
+                        <ul>
+
+                        <li>
+                        <a href = "watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Home
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "pages/Products/products.html" style="text-decoration: none;" class="footer-navlinks">
+                            Products
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "pages/Blog/watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Blog
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "pages/Research/research_home.html" style="text-decoration: none;" class="footer-navlinks">
+                            Research
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "pages/About us/index.html" style="text-decoration: none;" class="footer-navlinks">
+                            About us
+                        </a>
+                        </li>
+
+                        </ul>
+                    </div> 
+
+                    <hr style="width:570px;">
+
+                    <div class="left-side-footer-2">
+                        <a href="https://www.facebook.com">
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com">
+                            Instagram
+                        </a>
+                        <a href="https://www.X.com">
+                            X
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            Linkedin
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            Youtube
+                        </a>
+                    </div>
+                    
+                    <div class="left-side-footer-end">
+                        © 2024-2025 <a href="#" style="color:white;">Chérie.com</a>
+                    </div>
+                </div>
+
+                <div class="right-side-footer">
+                    <div class="subscribe-container">
+                        <div class="subscribe-text">
+                            <h3>Subscribe to Chérie News</h3>
+                            <br>
+                            <p>Sign up for the latest news about Chérie, delivered to you weekly.</p>
+                            <br>
+                            
+                            <div class="subscribe-input">
+                            <form id = "emailForm">
+                                    <input type="email" id="email" name="email" placeholder="Enter Email Address">
+
+                            <!--For validating the form-->
+                            <script src="javascript/emailValidate.js"></script>
+
+                            <br>
+                            <button type="submit" class="subscribe-button">Subscribe</button>
+                            </form>
+                            
+                            <br>
+                            </div>
+
+                            <br>
+                            <p class="end">Protected by <span class="highlight">reCAPTCHA.</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

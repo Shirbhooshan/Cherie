@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <style>
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 0.2s ease-in-out; /* for cooler startup */
+        }
+
+        @keyframes fadeIn {
+        from {
+        opacity: 0; /* start fully transparent */
+        }
+        to {
+        opacity: 1; /* end fully visible */
+        }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+header h1 {
+    background: none;
+    font-size: 24px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+main {
+    padding: 40px;
+    background-color:rgb(240, 239, 239);
+}
+
+main h2 {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    text-align:center;
+}
+
+main h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    margin: 10px 0 40px;
+    text-align:center;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/*
+.nav-container{
+    background-color: rgb(41, 41, 114);
+    padding:8px;
+}
+
+.nav-links a{
+    color:white;
+    padding:21px 35px;
+}
+
+.nav-links a:hover{
+    background-color: rgb(13, 13, 85);
+    transition:0.4s;
+}
+
+*/
+
+            .feedback-content{
+                background-color: white;
+                max-width:500px;
+                width:100%;
+                border-radius:8px;
+                box-shadow:grey;
+                padding:30px;
+                margin-left:30%;
+            }
+
+            .form-content{
+                margin-bottom:15px;
+            }
+
+            label{
+                display:block; /*adds them up and down */
+                font-weight:bold;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color:black;
+                margin-bottom:10px;
+                font-size:18px;
+            }
+
+            input{
+                border:1px groove black;
+                border-radius:8px;
+                font-size:14px;
+                width:95%;
+                margin-top:5px;
+                padding: 10px;
+            }
+
+            textarea{
+                border:1px groove black;
+                border-radius:8px;
+                font-size:14px;
+                width:95%;
+                margin-top:5px;
+                padding: 10px;
+                resize: vertical; /* makes it so that it doesn't resize to the side */
+            }
+
+            select{
+                border:1px groove black;
+                border-radius:8px;
+                font-size:14px;
+                width:100%;
+                margin-top:5px;
+                padding: 10px;
+            }
+
+            button{
+                background-color: green;
+                color:white;
+                border:none;
+                border-radius:10px;
+                cursor:pointer;
+                font-size:20px;
+                width:100%;
+                padding:15px;
+            }
+
+            button:hover{
+                background-color:rgb(17, 95, 17);
+                transition:0.4s;
+            }
+
+            .icon-holder img{
+                margin-left:370%;
+            }
+
+            nav{
+    border-bottom:1px groove rgb(41, 54, 85);
+    width: 100%;
+    background-color: white;
+}
+
+.spacer{
+    margin-top:100px;
+}
+
+.top-container{
+    position:fixed;
+    margin-top:-122px;
+    padding:0px;
+    width: 100%;
+    background-color: white;
+}
+    </style>
+</head>
+
+<body>
+    <!-- NAV BAR
+    <header class="header1" style = "margin-left:43%;">
+        <img src ="../../images/Logo.png" width="150px;" height="60px;" alt = "logo" style="object-fit: cover;">
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <div class="nav-links">
+                    <li><a href="../../watch.html" style="text-decoration:none;">Home</a></li>
+                    <li><a href="../Products/products.html" style="text-decoration:none;">Products</a></li>
+                    <li><a href="../Blog/watch.html" style="text-decoration:none;">Blog</a></li>
+                    <li><a href="../Research/research_home.html" style="text-decoration:none;">Research</a></li>
+                    <li><a href="index.html" style="text-decoration:none;">About us</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+-->
+
+<div class="spacer">
+    <p> </p>
+    <br>
+</div>
+
+<div class="top-container">
+    <div class="icon-bar">
+            
+            <div class="icon-holder">
+                <a href="#">
+                    <img src ="../../images/Logo.png" width="150px;" height="60px;" alt = "logo" style="object-fit: cover;">
+                </a>
+            </div>
+    </div>
+
+        <!--nav bar-->
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <div class="nav-links">
+                        <li><a href="../../watch.html" style="text-decoration:none;">Home</a></li>
+                        <li><a href="../Products/products.html" style="text-decoration:none;">Products</a></li>
+                        <li><a href="../Blog/watch.html" style="text-decoration:none;">Blog</a></li>
+                        <li><a href="../Research/research_home.html" style="text-decoration:none;">Research</a></li>
+                        <li><a href="index.html" style="text-decoration:none;">About us</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+</div>
+
+    <main>
+        <h1 style="font-size:50px;color: rgb(41, 41, 114);">About Us</h1>
+        <br>
+        <h1>Team Leader</h1>
+        <div class="leader">
+            <div class="team-card">
+                <img src="../../images/about us/shirbhooshan.jpg" alt="Shirbhooshan Razopadhyay">
+                <h3>Shirbhooshan Razopadhyay</h3>
+                <div>
+                    <a class="Full Details" href="Shirbhoosan.html">Full Details</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h1>Members</h1>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="../../images/about us/prasun.png" alt="Prasun Niroula" style="object-fit: cover;">
+                <h3>Prasun Niroula</h3>
+                <div>
+                    <a class="Full Details" href="Prasun.html">Full Details</a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="../../images/about us/garima.jpg" alt="Garima Pandey">
+                <h3>Garima Pandey</h3>
+                <div>
+                    <a class="Full Details" href="Garima.html">Full Details</a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="../../images/about us/sadikshya.jpg" alt="Sadikshya Lamichhane">
+                <h3>Sadikshya Lamichhane</h3>
+                <div>
+                    <a class="Full Details" href="Sadikshya.html">Full Details</a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="../../images/products/usericon.png" alt="Srijana Pandey">
+                <h3>Srijana Pandey</h3>
+                <div>
+                    <a class="Full Details" href="Srijana.html">Full Details</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--feedback section-->
+
+    <div class="feedback-containter" style="margin-top:2%;">
+        <div class="feedback-warn-box" style=
+        "text-align:center;
+        background-color: green;
+        margin-left:20%;
+        margin-right:10%;
+        padding:10px;
+        border-radius:8px;
+        color:white;
+        max-width:900px;
+        ">
+            <h1>If you would like to add reviews, fill the form below!</h1>
+        </div>
+
+        <div class="feedback-content">
+            <form id = "feedbackForm" method="post">
+        
+                <!--for first name-->
+        
+                <div class="form-content">
+                    <label for = "first-name">First name:</label>
+                    <input type ="text" id ="first-name" name ="first-name" placeholder="Enter your first name" required>
+                </div>
+        
+                <!--for last name-->
+        
+                <div class="form-content">
+                    <label for = "last-name">Last name:</label>
+                    <input type ="text" id ="last-name" name ="last-name" placeholder="Enter your last name" required>
+                </div>
+
+                <!--member-->
+        
+                <div class="form-content">
+                    <label for = "gender">Member:</label>
+                    <select id="member" name="member" required>
+                        <option value="">Select member</option>
+                        <option value="prasun">Prasun</option>
+                        <option value="garima">Garima</option>
+                        <option value="sadikshya">Sadikshya</option>
+                        <option value="shirbhooshan">Shirbhooshan</option>
+                        <option value="srijana">Srijana</option>
+                    </select>
+                </div>
+        
+                <!--remarks-->
+                <div class="form-content">
+                    <label for ="remarks">Remarks:</label>
+                    <textarea id = "remarks" name = "remarks" placeholder = "Enter remarks of member.." rows="2"></textarea>
+                </div>
+        
+                <!--button-->
+                
+                <div class="form-content">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+            <!-- javascript for it-->  
+        
+            <script>
+        
+                document.getElementById('feedbackForm').addEventListener('submit',function(event) //listening to submit button
+                {
+                event.preventDefault(); //prevents refreshing 
+        
+                const firstname = document.getElementById('first-name').value;
+                const lastname = document.getElementById('last-name').value;
+                const member = document.getElementById('member').value;
+                const remarks = document.getElementById('remarks').value;
+        
+                if (firstname=== '' || lastname === '' || member === '' || remarks === '')
+                {
+                alert('Not complete: Please fill up all fields');
+                }
+                else{
+                alert('Complete! All fields are filled.');
+                }
+            });
+            </script>
+
+    </div>
+
+       <!--Footer segment-->
+
+       <footer>
+        <div class ="footer-color" style="background-color:rgb(17, 19, 41);">
+            <div class="footer-container">
+
+                <div class="left-side-footer">
+                    <div class="left-side-footer-1">
+                        <img src ="../../images/Logo3 (1).png" width="200" height="200" alt="icon" style="object-fit: cover;">
+
+                        <ul>
+
+                        <li>
+                        <a href = "../../watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Home
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Products/products.html" style="text-decoration: none;" class="footer-navlinks">
+                            Products
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Blog/watch.html" style="text-decoration: none;" class="footer-navlinks">
+                            Blog
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "../Research/research_home.html" style="text-decoration: none;" class="footer-navlinks">
+                            Research
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href = "index.html" style="text-decoration: none;" class="footer-navlinks">
+                            About us
+                        </a>
+                        </li>
+
+                        </ul>
+                    </div> 
+
+                    <hr style="width:570px;">
+
+                    <div class="left-side-footer-2">
+                        <a href="https://www.facebook.com">
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com">
+                            Instagram
+                        </a>
+                        <a href="https://www.X.com">
+                            X
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            Linkedin
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            Youtube
+                        </a>
+                    </div>
+
+                    <div class="left-side-footer-end">
+                        © 2024-2025 <a href="../../watch.html" style="color:white;">Chérie.com</a>
+                    </div>
+                </div>
+
+                <div class="right-side-footer">
+                    <div class="subscribe-container">
+                        <div class="subscribe-text">
+                            <h3>Subscribe to Chérie News</h3>
+                            <br>
+                            <p>Sign up for the latest news about Chérie, delivered to you weekly.</p>
+                            <br>
+                            
+                            <div class="subscribe-input">
+                            <form id = "emailForm">
+                                    <input type="email" id="email" name="email" placeholder="Enter Email Address">
+
+                            <!--For validating the form-->
+                            <script src="../../javascript/emailValidate.js"></script>
+
+                            <br>
+                            <button type="submit" class="subscribe-button">Subscribe</button>
+                            </form>
+                            
+                            <br>
+                            </div>
+
+                            <br>
+                            <p class="end">Protected by <span class="highlight">reCAPTCHA.</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

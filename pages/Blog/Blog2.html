@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="viewport"content=width:device-width, initial-scale=1.0, user-scalable="no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <title> Blog </title>
+
+    <!--Stylesheet-->
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <style>
+
+        .top-container{
+            position:fixed;
+            margin-top:-100px;
+            padding:0px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .search-box{
+            padding: 10px;
+            width: 200px;
+        }
+        .search-box input{
+            font-size:18px;
+            padding:10px;
+            border-radius:8px;
+            border:none;
+            cursor:text;
+            background-color:rgb(237, 235, 235);
+        }
+        .search-box input:hover{
+            background-color:rgb(228, 225, 225);
+            transition:0.4s;
+        }
+        nav{
+            margin-top:0;
+            border-bottom:1px groove grey;
+            padding:15px;
+            width: 100%;
+            background-color: white;
+        }
+        main{
+            padding-top:35px;
+        }
+        *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        }
+        ul{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            animation: fadeIn 0.2s ease-in-out; /* for cooler startup */
+        }
+
+        @keyframes fadeIn {
+        from {
+        opacity: 0; /* start fully transparent */
+        }
+        to {
+        opacity: 1; /* end fully visible */
+        }
+}
+
+/* for search bar */
+
+.search-container{
+    margin-left:70%;
+}
+
+.blog-content-container{
+    margin-right:10%;
+    margin-left:10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.blog-content-container img{
+    height:250px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.blog-content-paragraph{
+    margin-left:20%;
+    margin-right:20%;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="top-container">
+
+<!--Icon bar-->
+
+        <div class="icon-bar">
+                            
+            <div class="icon-holder">
+                <a href="#">
+                <img src ="../../images/Logo.png" width="150px;" height="60px;" alt = "logo" style="object-fit: cover;">
+                </a>
+            </div>
+
+            <input type="text" class = "search-bar" placeholder="Search..." onclick="showalert()">
+            <a href="#"><button class="authorization-buttons" onclick="showalert()">Log in</button></a>
+            <a href="#"><button class="authorization-buttons" onclick="showalert()">Register</button></a>
+            <script>
+                function showalert() {
+                    alert("This feature is not available right now.");
+                }
+                </script>
+        </div>
+
+
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <div class="nav-links">
+                        <li><a href="../../watch.html" style="text-decoration:none;">Home</a></li>
+                        <li><a href="../Products/products.html" style="text-decoration:none;">Products</a></li>
+                        <li><a href="watch.html" style="text-decoration:none;">Blog</a></li>
+                        <li><a href="../Research/research_home.html" style="text-decoration:none;">Research</a></li>
+                        <li><a href="../About us/index.html" style="text-decoration:none;">About us</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="spacer">
+    
+        <br>
+        <br>
+        <br>
+
+        <div class="blog-content-container">
+            <img src="../../images/blog/impact.jpg" width="100%" height="auto">
+
+            <br>
+            <br>
+            <div class="blog-content-text">
+                <h1>Impacts of Technology</h1>
+
+                <div class="blog-content-paragraph">
+
+                    <span style="color:red;text-align:end;">30 August 2021</span>
+                    <p style="text-align: justify;font-size: 18px;">
+                        A watch is a timepiece carried by a person designed to keep a consistent movement despite the motion caused by the person's activities. These days watches have evolved impressively with advancement in technologies. There are several advanced technologies related watch making life more accurate, functional, and durable. <br>
+
+                        <br>
+                        Watches have both <u>positive</u> and <u>negative</u> impacts<br>
+                        
+                        <br>
+                        <b>Positive Impacts:</b>
+                        <br>
+                        <br>
+                        1. Convenience and Connectivity <br>
+                        ->>Smartwatches provides instant notifications, calls, and messages, keeping user connected.'
+                        <br>
+                        <br>
+                        2. Health and Fitness<br>
+                        ->> Many Fitness courses are available on the smartwatch which helps people stay active.<br>
+                        ->> Heart rate monitoring, sleep tracking, stress measuring, etc. features promote healthier lifestyle.<br>
+                        ->> Fall detection and emergency alerts can save lives.<br>
+                        <br>
+                        3.Eco-Friendly <br>
+                        ->> Solar-Powered and kinetic watches reduce battery waste.<br>
+                        
+                        <br>
+                        <b>Negative Impacts:</b> 
+                        <br>
+                        <br>
+                        
+                        1. Battery Dependency<br>
+                        ->> Smartwatches requires frequent charging, creating battery waste.<br>
+                        <br>
+                        2. Privacy<br>
+                        ->> Smartwatches collects personal data, raising concerns about hacking, and data loss.<br>
+                        ->> GPS tracking could hamper people's privacy if misused.<br>
+                        <br>
+                        3. Health concerns:<br>
+                        ->> With many health related technology, some experts worry about prolonged exposure to electromagnetic radiation from Bluetooth which are risky for human.<br>
+                        ->> Excessive reliance on fitness tracking may trigger anxiety or obsession over health stats.<br>
+                        <br>
+                        <li style="list-style: none;">***</li>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>  
+
+    <!--Footer segment-->
+
+        <footer>
+            <div class ="footer-color" style="background-color:rgb(17, 19, 41);">
+                <div class="footer-container">
+
+                    <div class="left-side-footer">
+                        <div class="left-side-footer-1">
+                            <img src ="../../images/Logo3 (1).png" width="200" height="200" alt="icon" style="object-fit: cover;">
+
+                            <ul>
+
+                            <li>
+                            <a href = "../../watch.html" style="text-decoration: none;" class="footer-navlinks">
+                                Home
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../Products/products.html" style="text-decoration: none;" class="footer-navlinks">
+                                Products
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "watch.html" style="text-decoration: none;" class="footer-navlinks">
+                                Blog
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../Research/research_home.html" style="text-decoration: none;" class="footer-navlinks">
+                                Research
+                            </a>
+                            </li>
+
+                            <li>
+                            <a href = "../About us/index.html" style="text-decoration: none;" class="footer-navlinks">
+                                About us
+                            </a>
+                            </li>
+
+                            </ul>
+                        </div> 
+
+                        <hr style="width:570px;">
+
+                        <div class="left-side-footer-2">
+                            <a href="https://www.facebook.com">
+                                Facebook
+                            </a>
+                            <a href="https://www.instagram.com">
+                                Instagram
+                            </a>
+                            <a href="https://www.X.com">
+                                X
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                Linkedin
+                            </a>
+                            <a href="https://www.youtube.com/">
+                                Youtube
+                            </a>
+                        </div>
+
+                        <div class="left-side-footer-end">
+                            © 2024-2025 <a href="../../watch.html" style="color:white;">Chérie.com</a>
+                        </div>
+                    </div>
+
+                    <div class="right-side-footer">
+                        <div class="subscribe-container">
+                            <div class="subscribe-text">
+                                <h3>Subscribe to Chérie News</h3>
+                                <br>
+                                <p>Sign up for the latest news about Chérie, delivered to you weekly.</p>
+                                <br>
+                                
+                                <div class="subscribe-input">
+                                <form id = "emailForm">
+                                        <input type="email" id="email" name="email" placeholder="Enter Email Address">
+
+                                <!--For validating the form-->
+                                <script src="../../javascript/emailValidate.js"></script>
+
+                                <br>
+                                <button type="submit" class="subscribe-button">Subscribe</button>
+                                </form>
+                                
+                                <br>
+                                </div>
+
+                                <br>
+                                <p class="end">Protected by <span class="highlight">reCAPTCHA.</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
