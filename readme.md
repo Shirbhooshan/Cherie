@@ -10,7 +10,7 @@ Cherie is a luxury-themed watch website developed as part of a group coursework 
 
 ```
 Cherie/
-│── watch.html
+│── index.html
 │── css/
 │── js/
 │── images/
@@ -39,4 +39,4 @@ Cherie/
 ---
 
 ## How to Run
-Open **watch.html** in any browser. All additional pages are located inside the **pages** folder.
+Open **index.html** in any browser. All additional pages are located inside the **pages** folder.
